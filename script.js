@@ -37,25 +37,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
-function submitForm() {
-    var formData = new FormData(document.getElementById('emailForm'));
-
-    fetch('indexemail.php', {
-        method: 'POST',
-        body: formData
-    })
-        .then(response => response.text())
-        .then(data => {
-            console.log(data);
-
-            // Display success message or modal
-            $('#thankYouModal').modal('show');
-
-            // Reset the form after submission
-            document.getElementById('emailForm').reset();
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-}
