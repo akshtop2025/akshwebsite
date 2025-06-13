@@ -130,7 +130,7 @@ button:hover { transform: translateY(-3px); box-shadow: 0 4px 20px rgba(0, 114, 
     margin-bottom: 20px;
 }
 .success-message h2 { font-size: 1.8rem; margin-bottom: 15px; }
-.success-message p { color: var(--subtle-text-color); line-height: 1.6; max-width: 300px; }
+.success-message p { color: var(--subtle-text-color); line-height: 1.6; }
 .success-message strong { color: var(--text-color); font-weight: 600; }
 
 /* --- Animations --- */
