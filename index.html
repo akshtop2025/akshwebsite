@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Own Website | Pro Design</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NEW: Animated Background Blobs -->
+    <div class="background-blobs">
+        <div class="blob1"></div>
+        <div class="blob2"></div>
+        <div class="blob3"></div>
+    </div>
+
+    <div class="page-container">
+        <!-- ===== LEFT INFORMATION PANEL ===== -->
+        <div class="info-panel">
+            <div class="header">
+                <h1 class="gradient-text">Let's Build Something Amazing.</h1>
+                <p>Tell us about your vision, and we'll craft a high-performance website that gets results.</p>
+            </div>
+
+            <div class="profile-card">
+                <img src="profile.jpg" alt="Your Name" class="profile-image">
+                <div class="profile-details">
+                    <h3>Your Name</h3>
+                    <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                </div>
+            </div>
+
+            <div class="tech-stack-card">
+                <h3>Our Core Technologies</h3>
+                <div class="tech-list">
+                    <i class="fab fa-react" title="React"></i>
+                    <i class="fab fa-laravel" title="Laravel"></i>
+                    <i class="fab fa-php" title="PHP"></i>
+                    <i class="fab fa-python" title="Python"></i>
+                    <i class="fas fa-desktop" title="Front-End"></i>
+                    <i class="fas fa-server" title="Back-End"></i>
+                    <i class="fa-brands fa-js" title="js"></i>
+                    <i class="fa-brands fa-node" title="node"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== RIGHT FORM PANEL ===== -->
+        <div class="form-panel">
+            <div class="form-card">
+                <!-- The JavaScript will replace this form with a success message -->
+                <!-- <form id="websiteForm">
+                    <h2>Start Your Project</h2>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Phone Number</label>
+                        <input type="tel" id="number" name="number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="requirements">Project Requirements</label>
+                        <textarea id="requirements" name="requirements" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Send Request</button>
+                </form> -->
+                 <form id="websiteForm" action="https://api.web3forms.com/submit" method="POST">
+                    
+                    <!-- YOUR ACCESS KEY HAS BEEN ADDED HERE -->
+                    <input type="hidden" name="access_key" value="41da2155-63ac-420e-a17b-9fb5e783a6e5">
+
+                    <input type="hidden" name="subject" value="New Website Project Request from Your Page">
+                    
+                    <h2>Start Your Project</h2>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Phone Number</label>
+                        <input type="tel" id="number" name="number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="requirements">Project Requirements</label>
+                        <textarea id="requirements" name="requirements" rows="4" required></textarea>
+                    </div>
+                    
+                    <div id="form-result"></div>
+
+                    <button type="submit">Send Request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
